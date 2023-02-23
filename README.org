@@ -1,3 +1,9 @@
 A mode to edit tilt files
 
-For now, it is empty, but I will likely add stuff in the future when the need comes.
+For now, it is empty, but I will likely add stuff in the future when the need comes
+
+* Installation
+
+#+BEGIN_SRC elisp   
+(use-package tilt-mode :straight (:repo "Konubinix/tilt-mode" :type git :host github))
+#+END_SRC
