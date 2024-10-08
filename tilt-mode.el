@@ -26,8 +26,7 @@
 
 ;;;###autoload
 (define-derived-mode tiltfile-mode python-mode "tiltfile"
-  "Major mode for editing tiltfile document."
-  )
+  "Major mode for editing tiltfile document.")
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist (cons "Tiltfile" 'tiltfile-mode))
