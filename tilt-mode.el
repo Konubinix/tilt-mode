@@ -31,5 +31,10 @@
 ;;;###autoload
 (add-to-list 'auto-mode-alist (cons "Tiltfile" 'tiltfile-mode))
 
+(eval-after-load "flycheck"
+  '(flycheck-add-mode 'python-flake8 'tiltfile-mode))
+
+(flycheck-checker-get 'python-flake8 :modes)
+
 (provide 'tilt-mode)
 ;;; tilt-mode.el ends here
